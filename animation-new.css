@@ -1,0 +1,167 @@
+#wrapper{
+   border: 3px solid; 
+}
+/*body{
+    background-color: #FF00EE;
+
+}*/
+
+body { background-color:#333; }
+#snow{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+div img{
+    height: 100%;
+    width: 100%;
+}
+#div1{
+   border-bottom: 3px solid; 
+   background-color: aqua;
+   height: 200px;
+   width: 200px;
+/*
+   margin-top: 60px;  
+*/
+            float: left;
+
+/*
+   transform:  rotateZ(90deg) translateX(250px);
+*/
+   animation-name: drive;
+    animation-duration: 10s;
+    /*just need to understand fill mode*/
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+        animation-direction: alternate
+
+/*
+    animation-delay: 2s;
+*/
+    /*
+   transform:  rotate(-45deg) scaleX(1.5);
+*/
+
+}
+/*#div2{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+    margin-top: 60px; 
+    overflow:visible.3;
+}*/
+#div3{
+     position: relative;
+    left:300px;
+    border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: left;
+    /*animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate*/
+
+    /*margin-top: 60px; */
+}
+#div4{
+    position: relative;
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: left;
+    left:300px;
+/* animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate*/
+
+    /*margin-top: 60px; */
+}
+/*#div5{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: right;
+    
+     animation-name: drive;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+
+    margin-top: 60px; 
+}*/
+
+#div6{
+   border-bottom: 3px solid; 
+
+    background-color:bisque;
+
+   height: 200px;
+   width: 1450px;
+    float: left;
+    clear: left;
+    
+}
+/*element to animate*/
+/*keyframes*/
+
+@keyframes drive{
+    from{transform: translateX(0px);}
+    to{transform: translateX(1250px);}
+}
+@keyframes another-drive{
+    from{transform: translateX(450px);}
+    to{transform: translateX(0px);}
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+#div1 p{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    /*left: 80px;*/
+    top: 70px;
+    float: left;
+    
+    
+}
+#div6 p{
+    position: relative;
+/*
+    font-size: 20px;
+*/
+/*
+    color: forestgreen;
+*/
+    text-align: center;
+    /*left: 80px;*/
+/*
+    top: -100px;
+*/
+        animation-name: vertical-drive;
+
+}

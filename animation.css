@@ -1,0 +1,141 @@
+#wrapper{
+   border: 3px solid; 
+}
+body{
+    background-color: #FF00EE;
+
+}
+div img{
+    height: 100%;
+    width: 100%;
+}
+#div1{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+/*
+   margin-top: 60px;  
+*/
+            float: left;
+
+/*
+   transform:  rotateZ(90deg) translateX(250px);
+*/
+   animation-name: drive;
+    animation-duration: 15s;
+    /*just need to understand fill mode*/
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+        animation-direction: alternate
+
+/*
+    animation-delay: 2s;
+*/
+    /*
+   transform:  rotate(-45deg) scaleX(1.5);
+*/
+
+}
+/*#div2{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+    margin-top: 60px; 
+    overflow:visible.3;
+}*/
+#div3{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: left;
+ animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+    /*margin-top: 60px; */
+}
+#div4{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: left;
+ animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+    /*margin-top: 60px; */
+}
+#div5{
+   border-bottom: 3px solid; 
+background-color: aqua;
+   height: 200px;
+   width: 200px;
+                float: left;
+     animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+
+    /*margin-top: 60px; */
+}
+
+#div6{
+   border-bottom: 3px solid; 
+
+    background-color:bisque;
+
+   height: 200px;
+   width: 1450px;
+    float: left;
+    clear: left;
+    
+}
+/*element to animate*/
+/*keyframes*/
+
+@keyframes drive{
+    from{transform: translateX(-200px);}
+    to{transform: translateX(1350px);}
+}
+@keyframes vertical-drive{
+    from{transform: translateY(200px);}
+    to{transform: translateY(1350px);}
+}
+
+
+#div1 p{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    /*left: 80px;*/
+    top: 70px;
+    float: left;
+    
+    
+}
+#div6 p{
+    position: relative;
+/*
+    font-size: 20px;
+*/
+/*
+    color: forestgreen;
+*/
+    text-align: center;
+    /*left: 80px;*/
+/*
+    top: -100px;
+*/
+        animation-name: vertical-drive;
+
+}
